@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#404040"
+    tools:context=".ui.auth.registration.RegistrationFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/auth_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Заполните поля"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginHorizontal="48dp"
+            android:fontFamily="@font/formular"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="ФИО"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:background="@drawable/register_edit_text_background"
+            android:padding="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/ageEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="Возраст"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:background="@drawable/register_edit_text_background"
+            android:padding="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/cityEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="Город"
+            android:background="@drawable/register_edit_text_background"
+            android:padding="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/addressEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="Адресс"
+            android:background="@drawable/register_edit_text_background"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фото:"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/formular"/>
+            <FrameLayout
+                android:id="@+id/choosePhoto"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/gray"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_edit_text_background">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/camera"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/codeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            android:hint="Код регистрации"
+            android:background="@drawable/register_edit_text_background"
+            android:padding="8dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Регистрация"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="@color/blue"/>
+    </LinearLayout>
+
+</FrameLayout>

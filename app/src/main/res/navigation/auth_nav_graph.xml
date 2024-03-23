@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/mainAuthFragment">
+
+    <fragment
+        android:id="@+id/mainAuthFragment"
+        android:name="com.sousa.location_project.ui.auth.MainAuthFragment"
+        android:label="fragment_main_auth"
+        tools:layout="@layout/fragment_main_auth" >
+        <action
+            android:id="@+id/action_mainAuthFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainAuthFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sousa.location_project.ui.auth.login.LoginFragment"
+        android:label="fragment_login_frament"
+        tools:layout="@layout/fragment_login_frament" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.sousa.location_project.ui.auth.registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+</navigation>

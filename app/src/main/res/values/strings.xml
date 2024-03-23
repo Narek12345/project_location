@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Location-Project</string>
+    <string name="settings">Настройки</string>
+    <string name="dark_theme">Темная тема</string>
+    <string name="accept">Подтвердить</string>
+    <string name="accept_dialog_text">Ознакомился и согласен с </string>
+    <string name="terms_of_use_accept">Условиями Использования</string>
+</resources>
