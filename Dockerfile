@@ -6,7 +6,7 @@ WORKDIR /fastapi_app
 
 COPY install_packages.sh .
 
-RUN ./install_packages.sh
+RUN install_packages.sh
 
 COPY . .
 
