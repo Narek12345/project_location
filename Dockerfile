@@ -1,14 +1,10 @@
 FROM python:3.8-slim
 
-RUN mkdir /location_project
+RUN mkdir /fastapi_app
 
-WORKDIR /location_project
+WORKDIR /fastapi_app
 
 COPY requirements.txt .
-
-RUN pip install --upgrade pip
-
-RUN pip install --upgrade setuptools
 
 RUN pip install -r requirements.txt
 

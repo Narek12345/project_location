@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.core.database import RegistrationCode
+from core.database import RegistrationCode
 
 router = APIRouter()
 

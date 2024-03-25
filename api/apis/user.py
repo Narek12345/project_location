@@ -3,8 +3,8 @@ from typing import Dict
 from fastapi import APIRouter
 from fastapi import UploadFile
 from fastapi import HTTPException
-from api.models.user_model import UserModel
-from api.core.database import User, RegistrationCode
+from models.user_model import UserModel
+from core.database import User, RegistrationCode
 
 router = APIRouter()
 
